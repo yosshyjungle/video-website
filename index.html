@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasion Video WebSite</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h1 class="logo">Fasion</h1>
+            <div class="toggle"></div>
+        </header>
+        <video src="./images/fashion.mp4" autoplay muted loop></video>
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>New Fasion Show</h2>
+            <h3>Explore Something</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae facilis, pariatur quas vero corporis exercitationem eum molestiae! Soluta, quisquam! Maiores, in iusto nostrum enim voluptatibus cum. Autem doloribus accusamus delectus.
+            </p>
+            <a href="#">Show </a>
+        </div>
+
+        <ul class="social">
+            <li>
+                <a href=""><img src="./images/facebook.png" alt="facebook" /></a>
+            </li>
+            <li>
+                <a href=""><img src="./images/twitter.png" alt="twitter" /></a>
+            </li>
+            <li>
+                <a href=""><img src="./images/instagram.png" alt="instagram" /></a>
+            </li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Woman</a></li>
+            <li><a href="">Men</a></li>
+            <li><a href="">Kids</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        const ToggleBtn = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        ToggleBtn.addEventListener("click", function() {
+            ToggleBtn.classList.toggle("active");
+            showcase.classList.toggle("active");
+        })
+    </script>
+</body>
+</html>
